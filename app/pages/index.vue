@@ -1,3 +1,3 @@
 <template>
-  <p>hoge-</p>
+  <BlogList></BlogList>
 </template>

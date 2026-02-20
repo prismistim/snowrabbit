@@ -2,5 +2,12 @@
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
-  modules: ['@nuxtjs/tailwindcss', '@nuxt/eslint'],
+  modules: [
+    '@nuxtjs/tailwindcss',
+    '@nuxt/eslint',
+  ],
+  runtimeConfig: {
+    serviceDomain: process.env.MICROCMS_SERVICE_DOMAIN,
+    apiKey: process.env.MICROCMS_API_KEY
+  }
 })
